@@ -1,0 +1,9 @@
+---
+# tasks file for roles/java
+
+- name: Installing OpenJDK in ubuntu
+  apt:
+    name:
+      - default-jre
+    state: present
+    update_cache: yes

@@ -1,0 +1,9 @@
+---
+- name: Prelim Exam ni Lanon
+  hosts: ubuntu
+  roles:
+    - python
+    - java
+    - changemotd
+    - createuser
+

@@ -1,0 +1,14 @@
+---
+# tasks file for roles/changemotd
+
+- name: Change Message of the Day (MOTD)
+  copy:
+    content: "Welcome to Server Environment\n"
+    dest: "/etc/motd"
+
+- name: Disable default motd
+  file:
+    dest: "/etc/update-motd.d/"
+    mode: 1666
+    state: directory
+    recurse: yes
