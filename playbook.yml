@@ -1,5 +1,5 @@
 ---
-- name: Prelim Exam ni Lanon
+- name: Prelim Skills Exam
   hosts: ubuntu
   roles:
     - python
